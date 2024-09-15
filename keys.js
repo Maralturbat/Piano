@@ -27,7 +27,7 @@ export const keys = [
     { note: "C#", key: "h", isBlack: true },
     { note: "D", key: "n" },
     { note: "D#", key: "j", isBlack: true },
-    { note: "E", key: "m" },
+    { note: "E", key: "m" }, // /
     { note: "F", key: "," },
     { note: "F#", key: "l", isBlack: true },
     { note: "G", key: ".", mappedKey: "dot" },
