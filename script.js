@@ -1,5 +1,5 @@
 import { keys } from "./keys.js";
-
+const allAudioNames = [];
 const pianoKeysContainer = document.querySelector(".piano-keys");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const createPianoKey = (key) => {
-    const { note, keyboard, IsBlack, specialKey } = key;
+    const { note, keyboard, isBlack, specialKey } = key;
 
     const li = document.createElement("li");
-    li.className = `key ${IsBlack ? "black" : "white"}`;
+    li.className = `key ${isBlack ? "black" : "white"}`;
 
     const audioName = specialKey || keyboard;
     li.dataset.audioName = audioName;
@@ -18,6 +18,6 @@ const createPianoKey = (key) => {
         <div>${note}</div>
         <span>${keyboard}</span>
     `;
-    li.textContent = pianoKeysContainer.appendChild(li);
-    AllAudioName.push(audioName);
+    pianoKeysContainer.appendChild(li);
+    allAudioNames.push(audioName);
 };

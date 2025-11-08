@@ -60,6 +60,7 @@ header h2 {
     color: gray;
     list-style: none;
     cursor: pointer;
+    position: relative;
 }
 
 .piano-keys .white {
