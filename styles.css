@@ -63,6 +63,10 @@ header h2 {
     position: relative;
 }
 
+.piano-keys .key.hide div {
+    display: none;
+}
+
 .piano-keys .key.hide span {
     display: none;
 }
@@ -137,7 +141,7 @@ header h2 {
     font-size: 1.2rem;
 }
 
-.labels-checkbox.input {
+.labels-checkbox input {
     position: relative;
     appearance: none;
     width: 60px;
@@ -148,7 +152,7 @@ header h2 {
     transition: 0.3s ease all;
 }
 
-.labels-checkbox.input:checked {
+.labels-checkbox input:checked {
     background-color: var(--green);
 }
 
@@ -165,6 +169,6 @@ header h2 {
     transition: 0.3s ease all;
 }
 
-.labels-checkbox.input:checked:before {
+.labels-checkbox input:checked:before {
     left: 35px;
 }

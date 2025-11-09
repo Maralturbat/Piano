@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     preloadAudio();
 
     document.addEventListener("keydown", handleKeyPress);
+    checkboxInput.addEventListener("click", toggleKeyLabels);
 });
 
 const createPianoKey = (key) => {
@@ -55,7 +56,7 @@ const playAudio = (audioName) => {
 };
 
 const toggleKeyLabels = () => {
-    const allKeys = document.querySelector(".key");
+    const allKeys = document.querySelectorAll(".key");
     allKeys.forEach((keyElement) => {
         keyElement.classList.toggle("hide");
     });
